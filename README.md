@@ -8,7 +8,7 @@ As this is a beta version it is not recommended for use in animation productions
 <b>Installing the plugin</b>
 
 
-Download the files, unzip them and copy them into Toon Boom Harmony's plugin folder. Administrator permission will be required.
+Download the files, unzip them and copy the IKHub and IKSelector folders into Toon Boom Harmony's plugin folder. Administrator permission will be required.
 e.g.
 
 ![image](https://user-images.githubusercontent.com/11638171/183882052-99fc4d62-2499-4222-9668-a8cff886f02b.png)
