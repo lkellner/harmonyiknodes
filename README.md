@@ -7,7 +7,7 @@ As this is a beta version it is not recommended for use in animation productions
 
 
 
-The aim of this plugin is to provide a quick to set up solution for an IK/FK system without the need of duplicating nodes and has a special focus on offering tools to keep the feet planting during a walk cycle.
+The aim of this plugin is to provide a quick to set up solution for an IK/FK system without the need of duplicating nodes and a special focus on offering tools to keep the feet planting during a walk cycle.
 
 
 <b>Installing the plugin</b>
