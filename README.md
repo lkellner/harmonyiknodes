@@ -84,4 +84,5 @@ This plugin was created by Laura Kellner. All rights reserved.
 
 
 https://www.motionscript.com/design-guide/ik.html whose After Effects tutorial on IK helped me understand the foundation necessary to write this plugin.
+
 https://rxlaboratory.org/ who with their After Effects plugin DUIK inspired me to create something similar for Toon Boom Harmony.
