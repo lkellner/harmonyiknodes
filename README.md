@@ -1,7 +1,7 @@
 # harmonyIknodes
 
 
-This plugin is currently only available for Windows in Toon Boom Harmony 21.0 and won’t function in Harmony 21.1. Updates to come soon
+This plugin is currently only available for Windows in Toon Boom Harmony 21.0 and 21.1. Mac version coming soon.
 
 As this is a beta version it is not recommended for use in animation productions yet, please report and potential bugs at the issues page.
 
@@ -24,7 +24,7 @@ e.g.
 <b>Setting up the scene</b>
 
 
-The IK Hub and the IK Selector nodes can be added by going to Node View -> Insert -> (Effects ->) Plugins. 
+The IK Hub and the IK Selector nodes can be added by going to Node View -> Insert -> (Effects ->) Plugins.
 
 The IK Hub node can have up to six possible inputs which are all required to be pegs.
 Out of these, four (Upper Limb inport, Lower limb inport, Extremity inport and Effector inport) are madatory while the other two (Toe inport and Heel inport) are optional.
@@ -38,7 +38,7 @@ These pegs should also be parented to each other following the set-up in the pic
 
 The IK Hub node’s outport offers four different transformations to choose from (Upper Limb, Lower Limb, Extremity and Toe). To be able to select the appropriate one an IK Selector node must be inserted between the IK Hub and the different parts of the rigs that are meant to be controlled by the IK set-up (e.g Upper Leg, Lower Leg, Foot).
 
-In the IK Selectors' drop down menu, choose the transformation that corresponds to the out connection of each node. 
+In the IK Selectors' drop down menu, choose the transformation that corresponds to the out connection of each node.
 
 ![image](https://user-images.githubusercontent.com/11638171/183881237-d80258bc-c97e-45c8-9cb0-fa23deacfddb.png)
 
@@ -50,7 +50,8 @@ The limbs will now follow the position of the Effector peg.
 <b>IK Hub attributes </b>
 
 
-Active: Switches between FK (0) and IK (1) mode.
+Active: Switches between FK (0) and IK (100) mode.
+          Use the values between 0 and 100 to interpolate between the two when necessary
 
 Clockwise: Changes the direction of the calculated IK limb angles.
 
@@ -61,30 +62,32 @@ Stretch Factor: Allows for the limbs to stretch until reaching the Effector peg 
 
 Follow Limb Rotation: Setting this to 0 keeps the Extremity’s rotation in space consistent, ignoring any rotation of the parent limbs. 100 follows the parents'                   rotation completely.
           Use the values between 0 and 100 to interpolate between the two when necessary
-         
-         
+
+
 <b>Best practices </b>
 
 While the set-up usually doesn’t break when scaling it, is recommended to only use scaling for flipping or uniform scaling as otherwise the rig might not behave as desired.
 
-To ensure the rig will stretch as intended, it is best to line up the Upper Limb, Lower Limb and Extremity pegs in a straight line. 
- 
- 
- 
+To ensure the rig will stretch as intended, it is best to set up the rig in FK mode (or before adding the IK nodes) and line up the Upper Limb, Lower Limb and Extremity pegs in a straight line.
+
+
+
 <b>Known issues</b>
 
 
-Setting any of the IK pegs' or their parents' (direct and indirect) scaleto 0 might not result in the desired effect.
+Setting any of the IK pegs' or their parents' (direct and indirect) scale to 0 might not result in the desired effect.
 
- 
- 
+The ik set-up has currently only been implented to function in 2d space. It will work with simple 3d operations, such as nudging the z-position of a layer, however rotating around the x-axis and y-axis might cause unwanted results.
+
+Only permanent pivots of the pegs directly connected to IK Hub's inports are taken into account. Drawing pivot information is currently not being processed.
+
 <b>Credits</b>
 
 
 This plugin was created by Laura Kellner. All rights reserved.
- 
- 
- 
+
+
+
 <b>Acknowledgements</b>
 
 
