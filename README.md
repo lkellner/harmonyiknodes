@@ -1,7 +1,7 @@
 # harmonyIknodes
 
 
-This plugin is currently only available for Windows in Toon Boom Harmony 21.0 and 21.1. Mac version coming soon.
+This plugin is currently only available for Windows in Toon Boom Harmony 21.0, 21.1 and 22.0.
 
 As this is a beta version it is not recommended for use in animation productions yet, please report and potential bugs at the issues page.
 
